@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:weightSum="5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/food"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="2"
+        android:background="@color/Azure"
+        >
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="50dp"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/emailip"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/emailip"
+            android:hint="password"
+            android:textSize="30dp"
+            android:id="@+id/passwordip"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/passwordip"
+            android:layout_centerHorizontal="true"
+            android:background="@color/BlueDress"
+            android:layout_marginTop="10dp"
+            android:text="Log In"
+            android:textSize="30dp"
+            android:textColor="@color/MilkWhite"
+            android:id="@+id/loginbtn"
+            />
+
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/loginbtn"
+            android:text="----------------------or------------------"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/or"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/or"
+            android:textAlignment="center"
+            android:text="To register,                            Contact Mess Incharge"
+            android:textSize="20dp"
+            android:background="@color/GreenApple"
+            android:textStyle="bold"
+            android:textColor="@color/MilkWhite"></TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

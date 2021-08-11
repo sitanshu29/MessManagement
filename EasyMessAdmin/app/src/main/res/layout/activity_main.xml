@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+          <EditText
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="3"
+              android:hint="Search..."
+              android:inputType="number"
+              android:id="@+id/searchip"
+              android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/search_btn"
+                android:layout_weight="1"
+                android:src="@drawable/ic_search_black_24dp"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Name: "
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:id="@+id/searchname"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="xyz"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Reg. No : "
+                android:layout_weight="1"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:id="@+id/searchreg"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="xyz"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Mobile:  "
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:id="@+id/searchmobile"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="xyz"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Break Status"
+                android:textStyle="bold"
+                android:background="@color/BlueLotus"
+                android:textColor="@color/White"
+                android:id="@+id/bstatus"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Egg: "
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="35dp"
+                android:id="@+id/eggbcount"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/eggbup"
+                    android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/eggbdown"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Chicken: "
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="35dp"
+                android:id="@+id/chickbcount"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/chickbup"
+                    android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/chickbdown"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Lunch Status"
+            android:textStyle="bold"
+            android:background="@color/BlueLotus"
+            android:textColor="@color/White"
+            android:id="@+id/lstatus"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Egg: "
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:layout_weight=".5"
+            android:textSize="35dp"
+            android:id="@+id/egglcount"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/egglup"
+                android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eggldown"
+                android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Chicken: "
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:layout_weight=".5"
+            android:textSize="35dp"
+            android:id="@+id/chicklcount"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/chicklup"
+                android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/chickldown"
+                android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Dinner Status"
+                android:textStyle="bold"
+                android:background="@color/BlueLotus"
+                android:textColor="@color/White"
+                android:id="@+id/dstatus"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Egg: "
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="35dp"
+                android:id="@+id/eggdcount"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/eggdup"
+                    android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/eggddown"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Chicken: "
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="35dp"
+                android:id="@+id/chickdcount"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/chickdup"
+                    android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/chickddown"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Reset Current User Data"
+            android:id="@+id/rstcurr"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Register Students"
+        android:textSize="18dp"
+        android:id="@+id/regstudent"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Change Menu"
+        android:textSize="18dp"
+        android:id="@+id/changemenu"/>
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Reset Today Data"
+           android:textSize="18dp"
+           android:id="@+id/reset"/>
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="65dp"
+       android:orientation="horizontal"
+       android:weightSum="3">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="70dp"
+        android:text="BackUp Today's Data"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:id="@+id/backup"
+        />
+       <Button
+           android:layout_width="0dp"
+           android:layout_weight=".75"
+           android:layout_height="70dp"
+           android:text="View Complain"
+           android:textSize="15dp"
+           android:layout_gravity="center"
+           android:id="@+id/viewcomplain"
+           />
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_weight=".75"
+           android:layout_height="70dp"
+           android:text="View Feedback"
+           android:textSize="15dp"
+           android:layout_gravity="center"
+           android:id="@+id/viewfb"
+           />
+
+
+   </LinearLayout>
+
+</LinearLayout>

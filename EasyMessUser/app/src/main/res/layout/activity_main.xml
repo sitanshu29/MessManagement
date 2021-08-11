@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="Hi..."
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textAlignment="center"
+            android:id="@+id/user"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="@color/Red"
+            android:text="LogOut"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:id="@+id/logoutbtn"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="BreakFast Menu"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:id="@+id/tvmeal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="Masala Dosa, Coconut Chutney, Sambhar, Coffee, Tea, Milk, Bread, Jam, Butter"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/Red"
+            android:background="@color/GreenApple"
+            android:id="@+id/curr_menu"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="3"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Extras: "
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:src="@drawable/egg"
+                android:paddingBottom="20dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:id="@+id/eggc"
+                android:layout_weight=".5"
+                android:background="@color/GrayCloud"
+                android:text="0"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:src="@drawable/chick"
+                android:paddingBottom="20dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:id="@+id/chickc"
+                android:layout_weight=".5"
+                android:background="@color/GrayCloud"
+                android:text="0"
+                android:textSize="40dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Like the food... Share your FeedBack!"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            android:background="@color/DarkSlateBlue"
+            android:textColor="@color/White"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Breakfast FeedBack"
+                android:id="@+id/bfb"
+                android:clickable="false"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Lunch FeedBack"
+                android:id="@+id/lfb"
+                android:clickable="false"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Dinner FeedBack"
+                android:clickable="false"
+                android:id="@+id/dfb" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/menu"
+            android:background="@color/GreenYellow"
+            android:text="View Weekly Menu"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Have Complain/ Suggestion. Share with us"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:background="@color/DarkSlateBlue"
+        android:textColor="@color/White"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/complain"
+        android:background="@color/GreenYellow"
+        android:text="Complain/Suggestion"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
